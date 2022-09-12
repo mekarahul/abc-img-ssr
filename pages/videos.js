@@ -1,12 +1,13 @@
-import React from 'react'
-import ReactPlayer from 'react-player';
-
+import React, { Suspense } from 'react'
+import VideoPlayer from '../components/video-player'
 export default function Videos(props) {
 
 
     return (
         <>
-            <ReactPlayer url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" controls />
+            <div className="grid">
+                <VideoPlayer src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" />
+            </div>
         </>
     )
 }
