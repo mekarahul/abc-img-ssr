@@ -19,8 +19,14 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.videos {
+  max-width: 300px;
+  height: 300px;
 }
